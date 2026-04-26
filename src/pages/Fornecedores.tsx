@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { loadSuppliers, deleteSupplier } from '../lib/supabaseHelpers'
 import { Supplier } from '../types'
-import { generatePDF } from '../lib/GeneratePDF'
+import { generatePDF } from '../lib/generatePDF'
 
 function StatusBadge({ status }: { status?: string }) {
     const map: Record<string, string> = {
